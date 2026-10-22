@@ -30,7 +30,7 @@ await channel.QueueBindAsync(
     exchange: exchangeName,
     routingKey: routingKey);
 
-for (int i = 0; i < 60; i++)
+for (int i = 1; i <= 100; i++)
 {
     Console.WriteLine($"Sending Message {i}");
 
